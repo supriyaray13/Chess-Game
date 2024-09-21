@@ -1,0 +1,17 @@
+npm init:
+creates a package json file that will maintain and manage everything that is going on in this project.
+
+FILE app.js:
+1. const server=  http.createServer(app); 
+const io= socket(server);
+
+--links the http server and express seever, all the functionaliies of socket is now in io
+
+2. io.on("connection", function(uniqsocket){
+  console.log("connected");
+});
+
+--whenever a new user is connected with the backend, his/her unique information is shared in the fuction uniqsocket
+--MAKE SOCKET.IO NOTES
+--- at this point we only had socket on the backend side but we need it on both ends, i.e. frontend and backend both for real time changes.
+
